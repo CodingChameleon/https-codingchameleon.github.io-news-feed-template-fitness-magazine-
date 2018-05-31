@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NewsFeed | Pages | Single Page</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/animate.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/li-scroller.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/slick.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/theme.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+<!--[if lt IE 9]>
+<script src="../../assets/js/html5shiv.min.js"></script>
+<script src="../../assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+<div class="container">
+  <header id="header">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="header_top">
+          <div class="header_top_left">
+            <ul class="top_nav">
+              <li><a href="../../../index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="header_top_right">
+            <p>Thursday, May 31, 2018</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="header_bottom">
+          <div class="logo_area"><a href="../../index.html" class="logo"><img src="../../images/logo.jpg" alt=""></a></div>
+          <div class="add_banner"><a href="#"><img src="../../images/addbanner_728x90_V1.jpg" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="navArea">
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav main_nav">
+          <li class="active"><a href="../../index.html"><span class="fa fa-home desktop-home"></span><span class="mobile-show">Home</span></a></li>
+          <li class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Category 1</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Article 1</a></li>
+              <li><a href="#">Article 2</a></li>
+              <li><a href="#">Article 3</a></li>
+              <li><a href="#">Article 4</a></li>
+              <li><a href="#">Article 5</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Category 2</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Article 1</a></li>
+              <li><a href="#">Article 2</a></li>
+              <li><a href="#">Article 3</a></li>
+              <li><a href="#">Article 4</a></li>
+              <li><a href="#">Article 5</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Category 3</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Article 1</a></li>
+              <li><a href="#">Article 2</a></li>
+              <li><a href="#">Article 3</a></li>
+              <li><a href="#">Article 4</a></li>
+              <li><a href="#">Article 5</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Category 4</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Article 1</a></li>
+              <li><a href="#">Article 2</a></li>
+              <li><a href="#">Article 3</a></li>
+              <li><a href="#">Article 4</a></li>
+              <li><a href="#">Article 5</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Category 5</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Article 1</a></li>
+              <li><a href="#">Article 2</a></li>
+              <li><a href="#">Article 3</a></li>
+              <li><a href="#">Article 4</a></li>
+              <li><a href="#">Article 5</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Category 6</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Article 1</a></li>
+              <li><a href="#">Article 2</a></li>
+              <li><a href="#">Article 3</a></li>
+              <li><a href="#">Article 4</a></li>
+              <li><a href="#">Article 5</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Category 7</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Article 1</a></li>
+              <li><a href="#">Article 2</a></li>
+              <li><a href="#">Article 3</a></li>
+              <li><a href="#">Article 4</a></li>
+              <li><a href="#">Article 5</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Category 8</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Article 1</a></li>
+              <li><a href="#">Article 2</a></li>
+              <li><a href="#">Article 3</a></li>
+              <li><a href="#">Article 4</a></li>
+              <li><a href="#">Article 5</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <section id="newsSection">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="latest_newsarea"> <span>Latest News</span>
+          <ul id="ticker01" class="news_sticker">
+            <li><a href="#"><img src="../../images/news_thumbnail3.jpg" alt="">My First News Item</a></li>
+            <li><a href="#"><img src="../../images/news_thumbnail3.jpg" alt="">My Second News Item</a></li>
+            <li><a href="#"><img src="../../images/news_thumbnail3.jpg" alt="">My Third News Item</a></li>
+            <li><a href="#"><img src="../../images/news_thumbnail3.jpg" alt="">My Four News Item</a></li>
+            <li><a href="#"><img src="../../images/news_thumbnail3.jpg" alt="">My Five News Item</a></li>
+            <li><a href="#"><img src="../../images/news_thumbnail3.jpg" alt="">My Six News Item</a></li>
+            <li><a href="#"><img src="../../images/news_thumbnail3.jpg" alt="">My Seven News Item</a></li>
+            <li><a href="#"><img src="../../images/news_thumbnail3.jpg" alt="">My Eight News Item</a></li>
+            <li><a href="#"><img src="../../images/news_thumbnail2.jpg" alt="">My Nine News Item</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contentSection">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="left_content">
+          <div class="single_page">
+            <ol class="breadcrumb">
+              <li><a href="../../../index.html">Home</a></li>
+              <li><a href="#">Nutrition</a></li>
+              <li class="active">Vegan Recipes</li>
+            </ol>
+            <h1>Vegan Recipes</h1>
+            <div class="post_commentbox"> <a href="#"><i class="fa fa-user"></i>Yessenia</a> <span><i class="fa fa-calendar"></i>1:57 PM</span> <a href="#"><i class="fa fa-tags"></i>Nutrition</a> </div>
+            <div class="single_page_content"> <img class="img-center" src="../nutrition/images/Vegan-1.png" alt="">
+              <p>With the many benefits for dieting one of the more popular diets that people would try is a vegan
+diet. A vegan diet is when none of the food that you eat are animal by products often associated
+with plant based diets. This can seem very changeling for people who are starting out because
+eating animal by products are more normalized than just eating plants. However this doesn’t
+mean that there aren’t any recipes for vegans and ot also doesn’t mean that they aren’t good.</p>
+
+<H4>The Recipes</H4>
+<p>When it comes to becoming a vegan finding recipes are difficult but here are a three that you
+can try from 16 Delicious Vegan Dinner Recipes</p>
+        
+        <img class="img-center" src="../nutrition/images/Vegan-2.png" alt="">
+        <h2>
+Curried Coconut Quinoa and Greens with Roasted Cauliflower</h2>
+<p>INGRÉDIENTS
+Roasted Cauliflower</p>
+<ul>1 head cauliflower, cut into bite-sized florets</ul>
+<ul>2 tablespoons melted coconut oil or olive oil</ul>
+<ul>1⁄4 teaspoon cayenne pepper</ul>
+<ul>Sea salt</ul>
+
+<p></p>
+<p>Curried coconut quinoa with greens</p>
+<ul>2 teaspoons melted coconut oil or olive oil</ul>
+<ul>1 medium yellow onion, chopped</ul>
+<ul>1 teaspoon ground ginger</ul>
+<ul>1 teaspoon ground turmeric</ul>
+<ul>1⁄2 teaspoon curry powder of choice (optional)</ul>
+<ul>1⁄2 teaspoon ground cardamom</ul>
+<ul>1 can (14 ounces) light coconut milk</ul>
+<ul>1⁄2 cup water</ul>
+<ul>1 cup quinoa, rinsed well in a fine mesh colander</ul>
+<ul>1⁄3 cup raisins</ul>
+<ul>1 teaspoon sea salt</ul>
+<ul>1 tablespoon apple cider vinegar</ul>
+<ul>4 cups baby arugula or chopped chard, spinach, maybe even kale*</ul>
+<ul>Optional garnishes: 2 green onions, chopped, and a sprinkle of red pepper flakes</ul>
+
+<p></p>
+<p>INSTRUCTIONS</p>
+<ul>Roast the cauliflower: Preheat oven to 425 degrees Fahrenheit. Toss the cauliflower
+florets with coconut oil, cayenne pepper and a light sprinkle of sea salt. Roast for 25 to 30 minutes on the middle rack, turning halfway, until the cauliflower is tender and golden
+on the edges.</ul>
+<p></p>
+<ul>Cook the quinoa: In a large pot with a lid, warm the coconut oil over medium heat. Add
+the onion and cook until it is turning translucent, stirring often, about 5 minutes. Add the
+ginger, turmeric, curry powder and cardamom and stir until fragrant, about 30 seconds.
+Pour in the coconut milk, water, rinsed quinoa and raisins. Bring the mixture to a boil,
+then cover and reduce heat to a simmer. Cook for 15 minutes, then remove the pot from
+heat and let it rest for 5 minutes.</ul>
+<p></p>
+<ul>Fluff the quinoa with a fork. Stir in the salt, vinegar and greens (if you intend to eat this
+dish as leftovers, I recommend storing leafy greens separate from the quinoa, as the
+greens don’t reheat well). Divide the quinoa into bowls and top with roasted cauliflower.
+Garnish with green onions and red pepper flakes if you’d like.</ul>
+<p></p>
+<p></p>
+<p></p>
+<img class="img-center" src="../nutrition/images/Vegan-3.png" alt="">
+<h2>Creamy (vegan!) Butternut Squash Linguine with Fried Sage</h2>
+<p>INGRÉDIENTS</p>
+<ul>2 tablespoons olive oil</ul>
+<ul>1 tablespoon finely chopped fresh sage</ul>
+<ul>2 pound butternut or kabocha squash, peeled, seeded, and cut into small 1⁄2-inch pieces
+(about 3 cups)</ul>
+<ul>1 medium yellow onion, chopped</ul>
+<ul>2 garlic cloves, pressed or chopped</ul>
+<ul>1⁄8 teaspoon red pepper flakes (up to 1⁄4 teaspoon for spicier pasta sauce)</ul>
+<ul>Salt</ul>
+<ul>Freshly ground black pepper</ul>
+<ul>2 cups vegetable broth</ul>
+<ul>12 ounces whole grain linguine or fettuccine</ul>
+<ul>Optional additional garnishes: shaved Parmesan or Pecorino and/or smoked salt</ul>
+<p></p>
+<p>INSTRUCTIONS</p>
+<ul>Warm the oil in a large skillet over medium heat. Once the oil is shimmering, add the
+sage and toss to coat. Let the sage get crispy before transferring it to a small bowl.
+Sprinkle it lightly with salt and set the bowl aside.</ul>
+<p></p>
+<ul>Add the squash, onion, garlic and red pepper flakes to the skillet. Season with salt and
+pepper. Cook, stirring occasionally, until the onion is translucent, about 8 to 10 minutes.
+Add the broth. Bring the mixture to a boil, then reduce the heat and simmer until the
+squash is soft and the liquid is reduced by half, about 15 to 20 minutes.</ul>
+<p></p>
+<ul>In the meantime, bring a large pot of salted water to a boil and cook the pasta until al
+dente according to package directions, stirring occasionally. Reserve 1 cup of the pasta
+cooking water before draining.</ul>
+<p></p>
+<ul>Once the squash mixture is done cooking, remove it from the heat and let it cool slightly.
+Transfer the contents of the pan to a blender, but keep the skillet handy. Purée the
+mixture until smooth (beware of hot steam escaping from the top of the blender), then
+season with salt and pepper until the flavors sing.</ul>
+<p></p>
+<ul>In the reserved skillet, combine the pasta, squash purée and 1⁄4 cup cooking liquid. Cook
+over medium heat, tossing and adding more pasta cooking water as needed, until the
+sauce coats the pasta, about 2 minutes. Season with more salt and pepper if necessary.</ul>
+<p></p>
+<ul>Serve the pasta in individual bowls topped with fried sage, more black pepper and
+shaved Parmesan/Pecorino and/or smoked salt, if desired.</ul>
+<p></p>
+<p></p>
+<p></p>
+<img class="img-center" src="../nutrition/images/Vegan-4.png" alt="">
+<h2>Butternut Squash Chipotle Chili with Avocado</h2>
+<p>INGRÉDIENTS</p>
+<ul>2 tablespoons olive oil</ul>
+<ul>1 medium red onion, chopped</ul>
+<ul>2 red bell peppers, chopped</ul>
+<ul>1 small butternut squash (1 1⁄2 pounds or less), peeled and chopped into 1⁄2-inch cubes</ul>
+<ul>4 garlic cloves, pressed or minced</ul>
+<ul>1 tablespoon chili powder</ul>
+<ul>1⁄2+ tablespoon chopped chipotle pepper in adobo* (start with 1⁄2 tablespoon and add
+more to taste, I thought mine was just right with 1 tablespoon)</ul>
+<ul>1 teaspoon ground cumin</ul>
+<ul>1⁄4 teaspoon ground cinnamon</ul>
+<ul>1 bay leaf</ul>
+<ul>2 cans (15 ounces each) black beans, rinsed and drained, or 3 cups cooked black beans</ul>
+<ul>1 small can (14 ounces) diced tomatoes, including the liquid**</ul>
+<ul>2 cups vegetable broth (or one 14-ounce can)</ul>
+<ul>Salt, to taste</ul>
+<ul>2 Avocados from Mexico, diced</ul>
+<ul>3 corn tortillas for crispy tortilla strips (or substitute crumbled tortilla chips)</ul>
+<ul>Optional additional garnishes: Chopped fresh cilantro and/or red pepper flakes</ul>
+<p></p>
+<p>INSTRUCTIONS</p>
+<ul>In a 4- to 6-quart Dutch oven or stock pot over medium heat, warm the olive oil until
+shimmering. Add the onion, bell pepper and butternut squash and cook, stirring
+occasionally, until the onions are turning translucent.</ul>
+<p></p>
+<ul>Turn the heat down to medium-low and add the garlic, chili powder, 1⁄2 tablespoon
+chopped chipotle peppers, cumin and cinnamon. Cook, stirring constantly, until fragrant,
+about 30 seconds. Add the bay leaf, black beans, tomatoes and their juices and broth.
+Stir to combine and cover for about 1 hour, stirring occasionally. Taste about halfway
+through cooking and add more chopped chipotle peppers if you’d like.</ul>
+<p></p>
+<ul>You’ll know your chili is done when the butternut squash is nice and tender and the liquid
+has reduced a bit, producing the hearty chili consistency we all know and love. Remove
+the bay leaf and add salt to taste.</ul>
+<p></p>
+<ul>To make the crispy tortilla strips: stack the corn tortillas and slice them into thin little
+strips, about 2 inches long by 1⁄4 inch wide. Warm a drizzle of olive oil in a medium pan
+over medium heat until shimmering. Toss in the tortilla slices, sprinkle with salt and stir.
+Cook until the strips are crispy and turning golden, stirring occasionally, about 4 to 7
+minutes. Remove tortilla strips from skillet and drain on a plate covered with a piece of
+paper towel.</ul>
+<p></p>
+<ul>Serve the chili in individual bowls, topped with crispy tortilla strips and plenty of diced
+avocado. I added a little sprinkle of red pepper flakes (optional). Cilantro would be nice
+as well. You might want to serve this along with some chipotle hot sauce (Tabasco
+makes one) for the spice addicts like myself.</ul>
+<p></p>
+<p>So when it comes to becoming a vegan although it may be difficult to find food to make there
+are residences for delicious vegan foods. No matter your reason for becoming vegan there are
+good recipes that are available.</p>
+           
+            </div>
+            <div class="social_link">
+              <ul class="sociallink_nav">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+              </ul>
+            </div>
+            <div class="related_post">
+              <h2>Related Post <i class="fa fa-thumbs-o-up"></i></h2>
+              <ul class="spost_nav wow fadeInDown animated">
+                <li>
+                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../../images/post_img1.jpg" alt=""> </a>
+                    <div class="media-body"> <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../../images/post_img2.jpg" alt=""> </a>
+                    <div class="media-body"> <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media"> <a class="media-left" href="single_page.html"> <img src="../../images/post_img1.jpg" alt=""> </a>
+                    <div class="media-body"> <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a> </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="nav-slit"> <a class="prev" href="#"> <span class="icon-wrap"><i class="fa fa-angle-left"></i></span>
+        <div>
+          <h3>City Lights</h3>
+          <img src="../../images/post_img1.jpg" alt=""/> </div>
+        </a> <a class="next" href="#"> <span class="icon-wrap"><i class="fa fa-angle-right"></i></span>
+        <div>
+          <h3>Street Hills</h3>
+          <img src="../../images/post_img1.jpg" alt=""/> </div>
+        </a> </nav>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <aside class="right_content">
+          <div class="single_sidebar">
+            <h2><span>Popular Post</span></h2>
+            <ul class="spost_nav">
+              <li>
+                <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../../images/post_img1.jpg"> </a>
+                  <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 1</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../../images/post_img2.jpg"> </a>
+                  <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 2</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../../images/post_img1.jpg"> </a>
+                  <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 3</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../../images/post_img2.jpg"> </a>
+                  <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 4</a> </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="single_sidebar">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#category" aria-controls="home" role="tab" data-toggle="tab">Category</a></li>
+              <li role="presentation"><a href="#video" aria-controls="profile" role="tab" data-toggle="tab">Video</a></li>
+              <li role="presentation"><a href="#comments" aria-controls="messages" role="tab" data-toggle="tab">Comments</a></li>
+            </ul>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="category">
+                <ul>
+                  <li class="cat-item"><a href="#">Sports</a></li>
+                  <li class="cat-item"><a href="#">Fashion</a></li>
+                  <li class="cat-item"><a href="#">Business</a></li>
+                  <li class="cat-item"><a href="#">Technology</a></li>
+                  <li class="cat-item"><a href="#">Games</a></li>
+                  <li class="cat-item"><a href="#">Life &amp; Style</a></li>
+                  <li class="cat-item"><a href="#">Photography</a></li>
+                </ul>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="video">
+                <div class="vide_area">
+                  <iframe width="100%" height="250" src="../http://www.youtube.com/embed/h5QWbURNEpA?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="comments">
+                <ul class="spost_nav">
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../../images/post_img1.jpg"> </a>
+                      <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 1</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../../images/post_img2.jpg"> </a>
+                      <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 2</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../../images/post_img1.jpg"> </a>
+                      <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 3</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../../images/post_img2.jpg"> </a>
+                      <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 4</a> </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="single_sidebar wow fadeInDown">
+            <h2><span>Sponsor</span></h2>
+            <a class="sideAdd" href="#"><img src="../../images/add_img.jpg" alt=""></a> </div>
+          <div class="single_sidebar wow fadeInDown">
+            <h2><span>Category Archive</span></h2>
+            <select class="catgArchive">
+              <option>Select Category</option>
+              <option>Life styles</option>
+              <option>Sports</option>
+              <option>Technology</option>
+              <option>Treads</option>
+            </select>
+          </div>
+          <div class="single_sidebar wow fadeInDown">
+            <h2><span>Links</span></h2>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Rss Feed</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Life &amp; Style</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="footer_top">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInLeftBig">
+            <h2>Flickr Images</h2>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInRightBig">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <address>
+            Perfect News,1238 S . 123 St.Suite 25 Town City 3333,USA Phone: 123-326-789 Fax: 123-546-567
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <p class="copyright">Copyright &copy; 2045 <a href="../../index.html">NewsFeed</a></p>
+    </div>
+  </footer>
+</div>
+<script src="../../assets/js/jquery.min.js"></script> 
+<script src="../../assets/js/wow.min.js"></script> 
+<script src="../../assets/js/bootstrap.min.js"></script> 
+<script src="../../assets/js/slick.min.js"></script> 
+<script src="../../assets/js/jquery.li-scroller.1.0.js"></script> 
+<script src="../../assets/js/jquery.newsTicker.min.js"></script> 
+<script src="../../assets/js/jquery.fancybox.pack.js"></script> 
+<script src="../../assets/js/custom.js"></script>
+</body>
+</html>
